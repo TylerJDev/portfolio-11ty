@@ -1,8 +1,8 @@
 {
-  "title": "Your Blog Name",
-  "url": "https://example.com/",
+  "title": "Tyler Jones",
+  "url": "https://trjones.dev/",
   "language": "en",
-  "description": "I am writing about my experiences as a naval navel-gazer.",
+  "description": "Tyler's Portfolio",
   "feed": {
     "subtitle": "I am writing about my experiences as a naval navel-gazer.",
     "filename": "feed.xml",

@@ -1,0 +1,19 @@
+---
+layout: layouts/home.njk
+eleventyNavigation:
+  key: Blog
+  order: 2
+---
+
+<div class="bio">
+  <h1>Blog</h1>
+  <p class="bio__title">Hi I'm Tyler, I like to make posts about things I've learnt.
+  Expect to find things about <strong>accessibility</strong>, <strong>JavaScript</strong>, and <straong>web development</strong in general.</p>
+</div>
+
+<div id="blog_posts">
+  <h2>Blog Posts</h2>
+  {% set postslist = collections.posts | head(-3) %}
+  {% set postslistCounter = collections.posts | length %}
+  {% include "bloglist.njk" %}
+<div>

@@ -1,25 +1,43 @@
 ---
 layout: layouts/base.njk
 templateClass: tmpl-post
+css: '/css/blog.css'
 ---
-<h1>{{ title }}</h1>
+<div id="blog-header-container">
+  <header>
+    <div id="blog-header-headings">
+      <h1>{{ title }}</h1>
+      <h2>{{ description }}</h2>
+    </div>
 
-<time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
-{%- for tag in tags | filterTagList %}
-{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-<a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
-{%- endfor %}
+    <div id="blog-metadata">
+      <strong>Date Posted:</strong> <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time><br/>
+      <strong>Tags:</strong>
+      <ul>
+        {%- for tag in tags | filterTagList %}
+        {%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+        <li>
+          <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
+        </li>
+        {%- endfor %}
+      </ul>
+    </div>
+    </header>
+  </div>
 
-{{ content | safe }}
+  <div id="blog-body-container">
+    {{ content | safe }}
+  </div>
 
-{%- if collections.posts %}
-{%- set nextPost = collections.posts | getNextCollectionItem(page) %}
-{%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
-{%- if nextPost or previousPost %}
-<hr>
-<ul>
-  {%- if nextPost %}<li>Next: <a href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a></li>{% endif %}
-  {%- if previousPost %}<li>Previous: <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a></li>{% endif %}
-</ul>
+  {%- if collections.posts %}
+  {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
+  {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
+  {%- if nextPost or previousPost %}
+
+  <ul id="blog-next-prev">
+    {%- if previousPost %}<li><a href="{{ previousPost.url | url }}">Previous: {{ previousPost.data.title }}</a></li>{% endif %}
+    {%- if nextPost %}<li><a href="{{ nextPost.url | url }}">Next: {{ nextPost.data.title }}</a></li>{% endif %}
+  </ul>
+</div>
 {%- endif %}
 {%- endif %}

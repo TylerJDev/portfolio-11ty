@@ -1,9 +1,11 @@
 <div reversed class="postlist" style="counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }}">
 {% for post in postslist | reverse %}
-  <article class="blog-item">
+  <article class="blog-post">
     <a href="{{ post.url | url }}" class="postlist-link">
       <div>
-        <h3>{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</h3>
+        <header>
+          <h3>{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</h3>
+        </header>
         <p>{{ post.data.description }}</p>
         <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">Date: {{ post.date | readableDate }}</time>
       </div>
@@ -11,5 +13,3 @@
   </article>
 {% endfor %}
 </article>
-
-
