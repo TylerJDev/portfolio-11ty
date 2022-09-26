@@ -1,0 +1,48 @@
+#about {
+    max-width: 960px;
+    margin: 0 auto;
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    #banner {
+        margin-bottom: 5%;
+    }
+
+    h1 {
+        margin-bottom: 1rem;
+    }
+
+    h2 {
+        font-weight: 300;
+        margin: 0px;
+    }
+
+    p {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+    }
+}
+
+#contact h2 {
+    font-weight: bold;
+}
+
+#social {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5%;
+    a {
+        font-size: 2rem;
+        border: 1px solid transparent;
+        font-family: 'Montserrat', sans-serif;
+    }    
+}
+
+@media (max-width: 900px) {
+    #social {
+        display: block;
+        > a {
+            display: block;
+            margin: 10px 0px 10px 0px;
+        }
+    }
+}

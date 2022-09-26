@@ -1,0 +1,17 @@
+@media (max-width: 900px) {
+    .navi_right {
+        width: 55%;
+    }
+
+    #banner p#home-sub-heading {
+        font-size: 1.5rem;
+    }
+
+    .footerNav_left, .footerNav_center {
+        display: none;
+    }
+
+    .footerNav_right {
+        width: 100%;
+    }
+}

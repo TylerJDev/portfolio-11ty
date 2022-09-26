@@ -8,6 +8,31 @@
 }
 /* End Globals */
 
+@media (max-width: 900px) {
+    #main-container {
+        width: unset;
+        #blog-header-container {
+            header {
+                flex-direction: column;
+            }
+        }
+    }
+
+    #blog-body-container {
+        code[class*="language-"],
+        pre[class*="language-"] {
+            white-space: pre-wrap;
+        }
+    }
+
+    #blog-next-prev {
+        flex-wrap: unset;
+        flex-direction: column;
+        padding: unset;
+        height: 100px;
+    }
+}
+
 #blog-header-container {
     width: 100%;
 
