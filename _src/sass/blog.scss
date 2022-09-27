@@ -9,6 +9,16 @@
 /* End Globals */
 
 @media (max-width: 900px) {
+    #eleventy-wrapper,
+    main {
+        width: 100%;
+
+    }
+
+    main {
+        padding: 0px;
+    }
+
     #main-container {
         width: unset;
         #blog-header-container {
@@ -18,24 +28,37 @@
         }
     }
 
-    #blog-body-container {
-        code[class*="language-"],
-        pre[class*="language-"] {
-            white-space: pre-wrap;
+    #blog-header-container,
+    #blog-body-container,
+    div > #blog-next-prev {
+        margin: 0px 20px 0px 20px;
+    }
+
+    div > #blog-next-prev {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        padding: unset;
+        margin-top: 2rem;
+
+        li {
+            margin-bottom: 1rem;
+        }
+
+        a {
+            display: block;
         }
     }
 
-    #blog-next-prev {
-        flex-wrap: unset;
-        flex-direction: column;
-        padding: unset;
-        height: 100px;
+    #blog-body-container {
+        ol {
+            padding: 0;
+            line-height: 2rem;
+        }
     }
 }
 
 #blog-header-container {
     width: 100%;
-
     header {
         width: 100%;
         height: unset;
