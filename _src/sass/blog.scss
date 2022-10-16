@@ -55,6 +55,15 @@
             line-height: 2rem;
         }
     }
+
+    #main-container > #blog-header-container {
+        width: unset;
+    }
+
+    p > img {
+        height: auto;
+        max-width: 100%;
+    }
 }
 
 #blog-header-container {

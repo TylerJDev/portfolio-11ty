@@ -1,83 +1,35 @@
-# eleventy-base-blog
+# Hello Friend, my name is Tyler! 🌇
 
-A starter repository showing how to build a blog with the [Eleventy](https://github.com/11ty/eleventy) static site generator.
+I'm a Frontend Engineer, I specialize mostly in the frontend & making accessible applications.
 
-[![Build Status](https://travis-ci.org/11ty/eleventy-base-blog.svg?branch=master)](https://travis-ci.org/11ty/eleventy-base-blog)
+## About Me 📖
 
-## Demos
+I love building and learning, it's a part of the reason why I'm a developer. With the vastness that is web development, I enjoy trying out new things which may improve my workflow, or to get a better perspective. Things like making sure something is accessible for all is always key when I'm building for the web.
 
-- [Netlify](https://eleventy-base-blog.netlify.com/)
-- [GitHub Pages](https://11ty.github.io/eleventy-base-blog/)
-- [Remix on Glitch](https://glitch.com/~11ty-eleventy-base-blog)
+## Currently Working On 🚧
 
-## Deploy this to your own site
+- [DJ With Friends](https://github.com/TylerJDev/DJ-With-Friends)
+- [YouTube Timestamps](https://github.com/TylerJDev/YouTube-Timestamps)
 
-Deploy this Eleventy site in just a few clicks on these services:
+## Blog Posts ✍🏽
 
-- [Get your own Eleventy web site on Netlify](https://app.netlify.com/start/deploy?repository=https://github.com/11ty/eleventy-base-blog)
-- [Get your own Eleventy web site on Vercel](https://vercel.com/import/project?template=11ty%2Feleventy-base-blog)
+- [The difference between aria-label, aria-labelledby and aria-describedby](https://trjones.dev/the-difference-between-aria-label-aria-labelledby-and-aria-describedby/)
+- [When role="button" is not enough](https://trjones.dev/when-role-button-is-not-enough/)
+- [Partial links are inaccessible](https://trjones.dev/partial-links-are-inaccessible/)
 
-Or, read more about [Deploying an Eleventy project](https://www.11ty.dev/docs/deployment/).
+### Upcoming Posts
 
-## Getting Started
+1. _How accessible are emojis?_
 
-### 1. Clone this Repository
+## Me Around the Web 🛬
 
-```
-git clone https://github.com/11ty/eleventy-base-blog.git my-blog-name
-```
+1. **Website**: [trjones.dev](https://trjones.dev/)
+2. **LinkedIn**: [Tyler Jones](https://www.linkedin.com/in/tyjdev/)
+3. **CodePen**: [TylerJDev](https://codepen.io/TylerJDev)
 
-### 2. Navigate to the directory
+## Small things about me 📋
 
-```
-cd my-blog-name
-```
-
-Specifically have a look at `.eleventy.js` to see if you want to configure any Eleventy options differently.
-
-### 3. Install dependencies
-
-```
-npm install
-```
-
-### 4. Edit \_data/metadata.json
-
-### 5. Run Eleventy
-
-```
-npx @11ty/eleventy
-```
-
-Or build and host locally for local development
-
-```
-npx @11ty/eleventy --serve
-```
-
-Or build automatically when a template changes:
-
-```
-npx @11ty/eleventy --watch
-```
-
-Or in debug mode:
-
-```
-DEBUG=* npx @11ty/eleventy
-```
-
-### Implementation Notes
-
-- `about/index.md` shows how to add a content page.
-- `posts/` has the blog posts but really they can live in any directory. They need only the `post` tag to be added to this collection.
-- Use the `eleventyNavigation` key in your front matter to add a template to the top level site navigation. For example, this is in use on `index.njk` and `about/index.md`.
-- Content can be any template format (blog posts needn’t be markdown, for example). Configure your supported templates in `.eleventy.js` -> `templateFormats`.
-- The `css` and `img` directories in the input directory will be copied to the output folder (via `addPassthroughCopy()` in the `.eleventy.js` file).
-- The blog post feed template is in `feed/feed.njk`. This is also a good example of using a global data files in that it uses `_data/metadata.json`.
-- This example uses three layouts:
-  - `_includes/layouts/base.njk`: the top level HTML structure
-  - `_includes/layouts/home.njk`: the home page template (wrapped into `base.njk`)
-  - `_includes/layouts/post.njk`: the blog post template (wrapped into `base.njk`)
-- `_includes/postlist.njk` is a Nunjucks include and is a reusable component used to display a list of all the posts. `index.njk` has an example of how to use it.
-
+- **Favorite Ice Cream** 🍨 - Vanilla Caramel Fudge
+- **Favorite TV show** 📺 - Mr Robot
+- **Favorite Movie** 🎞️ - Hot Fuzz
+- **Favorite Song (_currently_)** 🎵 - California Dreamin' by Eddie Hazel
