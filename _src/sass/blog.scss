@@ -120,14 +120,26 @@
             padding-left: 0px;
             margin-bottom: calc(1.75rem / 2);
             a {
-                padding: 5px;
+                padding: 0px 0px 2px;
                 color: #035b96;
                 box-shadow: 0 1px 0 0 currentColor;
                 text-decoration: none;
                 font-family: 'Merriweather','Georgia',serif;
                 font-weight: 400;
+
+                &:hover, &:active {
+                    border-bottom-style: double;
+                }
+
+                &:active {
+                    color: red;
+                }
             }
         }
+    }
+
+    a:hover, a:active {
+        text-decoration-style: double;
     }
 }
 
